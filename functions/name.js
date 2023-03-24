@@ -1,6 +1,6 @@
 export function onRequest(context) {
   let headers = new Headers();
-  var name = headers.get("name")
+  var name = 
    console.log(new Map(headers));
-  return new Response("Hello " + name)
+  return new Response("Hello " + headers.get("name"))
   }
