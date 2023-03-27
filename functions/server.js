@@ -1,6 +1,6 @@
 export function onRequest(context) {
   let headers = new Headers();
-  var country = headers.get("cf-ipcountry")
+  var server = headers.get("server")
    console.log(new Map(headers));
-  return new Response("Hello " + country + " user.")
+  return new Response("Hello " + server + " user.")
   }
